@@ -160,13 +160,6 @@ nav ul a:hover {
     gap: 4rem;
 }
 
-.conteudo {
-    flex-direction: column;
-    display: flex;
-    flex: 1;
-    gap: 1.5rem;
-}
-
 .secao {
     font-family: var(--corpo);
     color: var(--laranja);
@@ -174,6 +167,13 @@ nav ul a:hover {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.conteudo {
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    gap: 1.5rem;
 }
 
 .conteudo h2 {
@@ -210,3 +210,65 @@ nav ul a:hover {
     border-radius: 12px;
 }
 
+ /*tecnologia*/
+ .tecnologia {
+    background-color: var(--fundo1);
+    height: var(--altura);
+    padding: 0 4rem;
+    align-items: center;
+    display: flex;
+    gap: 4rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--card);
+    border: 1px solid var(--fundo1);
+    border-radius: 10px;
+    min-width: 200px;
+    padding: 1.5rem;
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    gap: 0.5rem;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.card:hover {
+    border-color: var(--laranja);
+    transform: translateY(-3px);
+}
+
+.card h3 {
+    font-family: var(--titulo);
+    color: var(--branco);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.card p {
+    font-family: var(--corpo);
+    color: var(--cinza);
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.card span {
+    width: fit-content;
+    padding: 0.2rem 0.6rem;
+    margin-top: 0.25rem;
+    background-color: var(--laranja);
+    border: 1px solid var(--laranja);
+    border-radius: 10px;
+    font-family: var(--corpo);
+    color: var(--fundo1);
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
