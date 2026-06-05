@@ -149,31 +149,21 @@ nav ul a:hover {
     border-color: var(--branco);
     color: var(--laranja);
 }
-
- /*problema*/
-.problema {
-    background-color: var(--fundo2);
-    height: var(--altura);
-    padding: 0 4rem;
-    align-items: center;
+ /*seções*/
+.conteudo {
+    flex-direction: column;
     display: flex;
-    gap: 4rem;
+    flex: 1;
+    gap: 1.5rem;
 }
 
-.secao {
+.conteudo span {
     font-family: var(--corpo);
     color: var(--laranja);
     font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-
-.conteudo {
-    flex-direction: column;
-    display: flex;
-    flex: 1;
-    gap: 1.5rem;
 }
 
 .conteudo h2 {
@@ -190,6 +180,16 @@ nav ul a:hover {
     font-size: 1rem;
     max-width: 500px;
     line-height: 1.5;
+}
+
+ /*problema*/
+.problema {
+    background-color: var(--fundo2);
+    height: var(--altura);
+    padding: 0 4rem;
+    align-items: center;
+    display: flex;
+    gap: 4rem;
 }
 
  .alerta {
@@ -226,7 +226,7 @@ nav ul a:hover {
     gap: 1rem;
 }
 
-.card {
+.card-tecnologia {
     background-color: var(--card);
     border: 1px solid var(--fundo1);
     border-radius: 10px;
@@ -239,26 +239,26 @@ nav ul a:hover {
     transition: border-color 0.2s, transform 0.2s;
 }
 
-.card:hover {
+.card-tecnologia:hover {
     border-color: var(--laranja);
     transform: translateY(-3px);
 }
 
-.card h3 {
+.card-tecnologia h3 {
     font-family: var(--titulo);
     color: var(--branco);
     font-size: 1.2rem;
     letter-spacing: 1px;
 }
 
-.card p {
+.card-tecnologia p {
     font-family: var(--corpo);
     color: var(--cinza);
     font-size: 0.8rem;
     line-height: 1.5;
 }
 
-.card span {
+.card-tecnologia span {
     width: fit-content;
     padding: 0.2rem 0.6rem;
     margin-top: 0.25rem;
@@ -289,7 +289,7 @@ nav ul a:hover {
     gap: 0.5rem;
 }
 
-.objetivo {
+.card-objetivo {
     background-color: var(--card);
     border: 1px solid var(--fundo2);
     border-radius: 10px;
@@ -301,27 +301,88 @@ nav ul a:hover {
     transition: border-color 0.2s, transform 0.2s;
 }
 
-.objetivo:hover {
+.card-objetivo:hover {
     border-color: var(--laranja);
     transform: translateY(-3px);
 }
 
-.numero span {
+.card-objetivo span {
     font-family: var(--titulo);
     color: var(--laranja);
     font-size: 1.5rem;
 }
 
-.objetivo strong {
+.card-objetivo strong {
     font-family: var(--corpo);
     color: var(--branco);
     font-size: 0.9rem;
 }
 
-.objetivo p {
+.card-objetivo p {
     width: var(--largura);
     font-family: var(--corpo);
     color: var(--cinza);
     font-size: 0.8rem;
     line-height: 1.5;
 }
+
+ /*publico alvo*/
+ .publico {
+    background-color: var(--fundo1);
+    padding: 4rem;
+    flex-direction: column;
+    display: flex;
+    gap: 2rem;
+}
+
+.publico-img {
+    display: flex;
+    gap: 3rem;
+}
+
+.publico-img img {
+    width: 45%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.container-publico {
+    width: 50%;
+    flex-wrap: wrap;
+    align-content: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.card-publico {
+    width: calc(50% - 0.5rem);
+    padding: 2rem;
+    flex-direction: column;
+    display: flex;
+    background-color: var(--card);
+    border: 1px solid var(--fundo1);
+    border-radius: 10px;
+    gap: 0.75rem;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.card-publico:hover {
+    border-color: var(--laranja);
+    transform: translateY(-3px);
+}
+
+.card-publico h3 {
+    font-family: var(--titulo);
+    color: var(--laranja);
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.card-publico p {
+    font-family: var(--corpo);
+    color: var(--cinza);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
