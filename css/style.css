@@ -19,14 +19,13 @@ html {
     --corpo: 'DM Sans', sans-serif;
 
     --fundo1: #000000;
-    --fundo2: #1f1f1f;
+    --fundo2: #0d1017;
     --card: #1a2030;
 
     --laranja: #e86a1d;
     --branco: #e6edf3;
     --cinza: #8b949e;
-
-    --padding-secao: 5rem 0;
+    --vermelho:  #ef4444;
 
     --largura: 100%;
     --altura: 100dvh;
@@ -76,7 +75,6 @@ nav ul a:hover {
  /*hero*/
 .hero {
     height: var(--altura);
-    padding: var(--padding-secao);
     position: relative;
     flex-direction: column; 
     align-items: center; 
@@ -151,3 +149,64 @@ nav ul a:hover {
     border-color: var(--branco);
     color: var(--laranja);
 }
+
+ /*problema*/
+.problema {
+    background-color: var(--fundo2);
+    height: var(--altura);
+    padding: 0 4rem;
+    align-items: center;
+    display: flex;
+    gap: 4rem;
+}
+
+.conteudo {
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    gap: 1.5rem;
+}
+
+.secao {
+    font-family: var(--corpo);
+    color: var(--laranja);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.conteudo h2 {
+    font-family: var(--titulo);
+    color: var(--branco);
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.conteudo p {
+    font-family: var(--corpo);
+    color: var(--cinza);
+    font-size: 1rem;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+ .alerta {
+    padding: 1rem 1.25rem;
+    border-left: 3px solid var(--vermelho);
+    background-color: rgba(239, 68, 68, 0.07);
+    border-radius: 10px;
+    font-family: var(--corpo);
+    color: var(--branco);
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.problema img {
+    height: 70vh;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
