@@ -498,7 +498,7 @@ nav ul a:hover {
 
 /*rodapé*/
 footer {
-  padding: 2.5rem 0;
+  padding: 1rem 0;
   background-color: var(--fundo2);
 }
 
@@ -529,6 +529,7 @@ footer {
   background: var(--card);
   font-family: var(--corpo);
   font-size: 0.8rem;
+  gap: 6px;
   transition:
     border-color 0.25s ease,
     background 0.25s ease,
